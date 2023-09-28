@@ -13,7 +13,8 @@ public class fn {
         employee1.addProject(project2);
         employee2.addProject(project3);
 
-
+        employee1.ShowDetail();
+        employee2.ShowDetail();
     }
 }
 
@@ -93,7 +94,7 @@ interface Job {
         System.out.println("Name : " + this.getName());
         System.out.println("Name : " + this.getPosition());
         System.out.println("Name : " + this.getEmpID());
-        System.out.println("************");
+
         for (int i = 0; i < this.MyProject.size(); i++) {
             System.out.println(this.MyProject.get(i).getProject()+" : " + this.MyProject.get(i).getDescription());
         }
